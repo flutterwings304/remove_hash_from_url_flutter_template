@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:remove_hash_from_url_flutter_template/router.dart';
 import 'package:url_strategy/url_strategy.dart';
 
+import 'router.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   setPathUrlStrategy();
   runApp(const MyApp());
 }
@@ -26,4 +28,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
